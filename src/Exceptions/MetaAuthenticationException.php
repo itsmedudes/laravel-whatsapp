@@ -1,6 +1,6 @@
 <?php
 
-namespace Itsmedudes\LaravelWhatsapp\Exceptions;
+namespace LaravelWhatsapp\Exceptions;
 
 class MetaAuthenticationException extends MetaException
 {

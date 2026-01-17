@@ -19,8 +19,8 @@ php artisan migrate
 ## Usage
 
 ```php
-use Itsmedudes\LaravelWhatsapp\WhatsAppBusinessClient;
-use Itsmedudes\LaravelWhatsapp\WhatsApp\MessagePayloadBuilder;
+use LaravelWhatsapp\WhatsAppBusinessClient;
+use LaravelWhatsapp\WhatsApp\MessagePayloadBuilder;
 
 $client = app(WhatsAppBusinessClient::class)->forUser($userId);
 
@@ -31,7 +31,7 @@ $client->sendMessage($phoneNumberId, $payload);
 ### Webhook verification
 
 ```php
-use Itsmedudes\LaravelWhatsapp\WebhookVerifier;
+use LaravelWhatsapp\WebhookVerifier;
 
 $verifier = new WebhookVerifier();
 $ok = $verifier->verifySignature($payload, $signatureHeader);

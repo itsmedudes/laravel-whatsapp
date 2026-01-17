@@ -1,6 +1,6 @@
 <?php
 
-namespace Itsmedudes\LaravelWhatsapp\Models;
+namespace LaravelWhatsapp\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

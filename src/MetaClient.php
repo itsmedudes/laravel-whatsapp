@@ -1,13 +1,13 @@
 <?php
 
-namespace Itsmedudes\LaravelWhatsapp;
+namespace LaravelWhatsapp;
 
-use Itsmedudes\LaravelWhatsapp\Contracts\TokenResolverInterface;
-use Itsmedudes\LaravelWhatsapp\Exceptions\MetaAuthenticationException;
-use Itsmedudes\LaravelWhatsapp\Exceptions\MetaRateLimitException;
-use Itsmedudes\LaravelWhatsapp\Exceptions\MetaRequestException;
-use Itsmedudes\LaravelWhatsapp\Exceptions\MetaValidationException;
-use Itsmedudes\LaravelWhatsapp\Models\MetaCredential;
+use LaravelWhatsapp\Contracts\TokenResolverInterface;
+use LaravelWhatsapp\Exceptions\MetaAuthenticationException;
+use LaravelWhatsapp\Exceptions\MetaRateLimitException;
+use LaravelWhatsapp\Exceptions\MetaRequestException;
+use LaravelWhatsapp\Exceptions\MetaValidationException;
+use LaravelWhatsapp\Models\MetaCredential;
 use Illuminate\Http\Client\PendingRequest;
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Http;
@@ -186,7 +186,7 @@ class MetaClient
         throw $exception;
     }
 
-    protected function makeException(int $status, string $message, array $error, array $body): \Itsmedudes\LaravelWhatsapp\Exceptions\MetaException
+    protected function makeException(int $status, string $message, array $error, array $body): \LaravelWhatsapp\Exceptions\MetaException
     {
         $code = isset($error['code']) ? (int) $error['code'] : null;
         $subcode = isset($error['error_subcode']) ? (int) $error['error_subcode'] : null;

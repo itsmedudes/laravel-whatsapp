@@ -1,9 +1,9 @@
 <?php
 
-namespace Itsmedudes\LaravelWhatsapp;
+namespace LaravelWhatsapp;
 
-use Itsmedudes\LaravelWhatsapp\Contracts\TokenResolverInterface;
-use Itsmedudes\LaravelWhatsapp\TokenResolvers\DatabaseTokenResolver;
+use LaravelWhatsapp\Contracts\TokenResolverInterface;
+use LaravelWhatsapp\TokenResolvers\DatabaseTokenResolver;
 use Illuminate\Support\ServiceProvider;
 
 class MetaServiceProvider extends ServiceProvider

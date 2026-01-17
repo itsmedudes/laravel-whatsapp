@@ -1,6 +1,6 @@
 <?php
 
-namespace Itsmedudes\LaravelWhatsapp;
+namespace LaravelWhatsapp;
 
 class WebhookVerifier
 {

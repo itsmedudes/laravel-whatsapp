@@ -1,9 +1,9 @@
 <?php
 
-namespace Itsmedudes\LaravelWhatsapp\TokenResolvers;
+namespace LaravelWhatsapp\TokenResolvers;
 
-use Itsmedudes\LaravelWhatsapp\Contracts\TokenResolverInterface;
-use Itsmedudes\LaravelWhatsapp\Models\MetaCredential;
+use LaravelWhatsapp\Contracts\TokenResolverInterface;
+use LaravelWhatsapp\Models\MetaCredential;
 
 class DatabaseTokenResolver implements TokenResolverInterface
 {

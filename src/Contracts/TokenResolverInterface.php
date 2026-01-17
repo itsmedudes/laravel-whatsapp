@@ -1,6 +1,6 @@
 <?php
 
-namespace Itsmedudes\LaravelWhatsapp\Contracts;
+namespace LaravelWhatsapp\Contracts;
 
 interface TokenResolverInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Itsmedudes\LaravelWhatsapp\WhatsApp;
+namespace LaravelWhatsapp\WhatsApp;
 
 class MessagePayloadBuilder
 {

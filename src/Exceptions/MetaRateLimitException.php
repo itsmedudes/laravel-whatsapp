@@ -1,6 +1,6 @@
 <?php
 
-namespace Itsmedudes\LaravelWhatsapp\Exceptions;
+namespace LaravelWhatsapp\Exceptions;
 
 class MetaRateLimitException extends MetaException
 {

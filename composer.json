@@ -22,22 +22,22 @@
     },
     "autoload": {
         "psr-4": {
-            "Itsmedudes\\LaravelWhatsapp\\": "src/"
+            "LaravelWhatsapp\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Itsmedudes\\\\LaravelWhatsapp\\\\MetaServiceProvider"
+                "LaravelWhatsapp\\\\MetaServiceProvider"
             ],
             "aliases": {
-                "Meta": "Itsmedudes\\\\LaravelWhatsapp\\\\Facades\\\\Meta"
+                "Meta": "LaravelWhatsapp\\\\Facades\\\\Meta"
             }
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Itsmedudes\\LaravelWhatsapp\\Tests\\": "tests/"
+            "LaravelWhatsapp\\Tests\\": "tests/"
         }
     },
     "support": {
