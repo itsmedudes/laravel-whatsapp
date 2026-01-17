@@ -1,0 +1,32 @@
+{
+    "name": "itsmedudes/laravel-whatsapp",
+    "description": "Laravel WhatsApp Business + Meta Graph client with multi-tenant token support.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ItsMeDudes"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^10.0|^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Itsmedudes\\LaravelWhatsapp\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Itsmedudes\\\\LaravelWhatsapp\\\\MetaServiceProvider"
+            ],
+            "aliases": {
+                "Meta": "Itsmedudes\\\\LaravelWhatsapp\\\\Facades\\\\Meta"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
